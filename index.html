@@ -18,6 +18,37 @@
             background-size: contain;
             background-position: center;
         }
+        .button-glowing {
+        background-color: #1c87c9;
+        -webkit-border-radius: 60px;
+        border-radius: 60px;
+        border: none;
+        color: #eeeeee;
+        cursor: pointer;
+        display: inline-block;
+        font-family: sans-serif;
+        font-size: 20px;
+        padding: 5px 15px;
+        text-align: center;
+        text-decoration: none;
+      }
+      @keyframes glowing {
+        0% {
+          background-color: #2ba805;
+          box-shadow: 0 0 5px #2ba805;
+        }
+        50% {
+          background-color: #49e819;
+          box-shadow: 0 0 20px #49e819;
+        }
+        100% {
+          background-color: #2ba805;
+          box-shadow: 0 0 5px #2ba805;
+        }
+      }
+      .button-glowing {
+        animation: glowing 1300ms infinite;
+      }
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -71,7 +102,7 @@
         </div>
     </nav>
     <div class="container mt-5">
-        <div class="col border border-dark rounded bg-dark bg-opacity-75" id="english">
+        <div class="col border border-dark rounded bg-dark bg-opacity-75 text-center pb-2" id="english">
 
             <h1 class="text-center text-white">
                 EVENTS
@@ -79,6 +110,7 @@
             <h2 class="text-center text-white">
                 English Department
             </h2>
+            <a href="https://forms.gle/h3EGMzYG8EQCBYpKA" class="button-glowing">Register Now</a>    
         </div>
         <div class="col border border-dark rounded bg-light p-3 mb-3 bg-opacity-75" id="ad">
             <h2 class="text-center">Ad Libitum(One Minute Talk Competition)</h2>
@@ -199,10 +231,11 @@
             </ul>
         </div>
 
-        <div class="col border border-dark rounded bg-dark bg-opacity-75 mt-5" id="cs">
+        <div class="col border border-dark rounded bg-dark bg-opacity-75 mt-5 text-center pb-2" id="cs">
             <h2 class="text-center text-white p-3">
                 Computer Science Department
             </h2>
+            <a href="https://forms.gle/gbPMBbcit6XgwrEL9" class="button-glowing">Register Now</a> 
         </div>
         <div class="col border border-dark rounded bg-light p-3 mb-3 bg-opacity-75" id="eFootball">
             <h2 class="text-center">eFootball Competition</h2>
@@ -348,10 +381,11 @@
                 </ul>
         </div>
 
-        <div class="col border border-dark rounded bg-dark bg-opacity-75 mt-5" id="maths">
+        <div class="col border border-dark rounded bg-dark bg-opacity-75 mt-5 text-center pb-2" id="maths">
             <h2 class="text-center text-white p-3">
                 Mathematics Department
             </h2>
+            <a href="https://forms.gle/UBcRxgS4De1CXn329" class="button-glowing">Register Now</a> 
         </div>
 
         <div class="col border border-dark rounded bg-light p-3 mb-3 bg-opacity-75" id="eFootball">
@@ -392,10 +426,11 @@
                     </ul>
         </div>
 
-        <div class="col border border-dark rounded bg-dark bg-opacity-75 mt-5" id="psychology">
+        <div class="col border border-dark rounded bg-dark bg-opacity-75 mt-5 text-center pb-2" id="psychology">
             <h2 class="text-center text-white p-3">
                 Psychology Department (PG)
             </h2>
+            <a href="https://forms.gle/MgRgMpmmUHco9pKS9" class="button-glowing">Register Now</a> 
         </div>
 
         <div class="col border border-dark rounded bg-light p-3 mb-3 bg-opacity-75" id="eFootball">
@@ -463,10 +498,11 @@
             <h5><u>Faculty Co-ordinator</u>: <span style="font-size:1rem">Ms. Mariya T J</span></h5>
         </div>
 
-        <div class="col border border-dark rounded bg-dark bg-opacity-75 mt-5" id="management">
+        <div class="col border border-dark rounded bg-dark bg-opacity-75 mt-5 text-center pb-2" id="management">
             <h2 class="text-center text-white p-3">
                 Management Studies Department
             </h2>
+            <a href="https://forms.gle/TTpuBWFLVfNtieCN8" class="button-glowing">Register Now</a> 
         </div>
 
         <div class="col border border-dark rounded bg-light p-3 mb-3 bg-opacity-75" id="eFootball">
@@ -582,10 +618,11 @@
             </ul>
         </div>
 
-        <div class="col border border-dark rounded bg-dark bg-opacity-75 mt-5" id="fashionDesign">
+        <div class="col border border-dark rounded bg-dark bg-opacity-75 mt-5 text-center pb-2" id="fashionDesign">
             <h2 class="text-center text-white p-3">
                 Fashion Design Department
             </h2>
+            <a href="https://forms.gle/iaKTsq6xufLY8MNWA" class="button-glowing">Register Now</a> 
         </div>
 
         <div class="col border border-dark rounded bg-light p-3 mb-3 bg-opacity-75" id="eFootball">
@@ -668,10 +705,11 @@
             </ul>
         </div>
 
-        <div class="col border border-dark rounded bg-dark bg-opacity-75 mt-5" id="commerce">
+        <div class="col border border-dark rounded bg-dark bg-opacity-75 mt-5 text-center pb-2" id="commerce">
             <h2 class="text-center text-white p-3">
                 Commerce Department
             </h2>
+            <a href="https://forms.gle/8NCas8DbrNJ2NHiFA" class="button-glowing">Register Now</a> 
         </div>
 
         <div class="col border border-dark rounded bg-light p-3 mb-3 bg-opacity-75" id="eFootball">

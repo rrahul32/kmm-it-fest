@@ -19,6 +19,10 @@
             background-position: center;
         }
 
+        .nav-link{
+            cursor:pointer;
+        }
+
         .button-glowing {
             background-color: #1c87c9;
             -webkit-border-radius: 60px;
@@ -73,37 +77,37 @@
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container" >
-            <a class="navbar-brand" href="#">ZEAL 2023</a>
+            <a class="navbar-brand" href="/">ZEAL 2023</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="links">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#english">English Events</a>
+                        <div class="nav-link" aria-current="page" data-target="english">English Events</div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#cs">CS Events</a>
+                        <div class="nav-link" data-target="cs">CS Events</div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#maths">Maths Events</a>
+                        <div class="nav-link" data-target="maths">Maths Events</div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#psychology">Psychology Events</a>
+                        <div class="nav-link" data-target="psychology">Psychology Events</div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#management">Business Events</a>
+                        <div class="nav-link" data-target="management">Business Events</div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#fashionDesign">Fashion Design Events</a>
+                        <div class="nav-link" data-target="fashionDesign">Fashion Design Events</div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#commerce">Commerce Events</a>
+                        <div class="nav-link" data-target="commerce">Commerce Events</div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#treasureHunt">Common Event</a>
+                        <div class="nav-link" data-target="treasureHunt">Common Event</div>
                     </li>
                 </ul>
             </div>
@@ -1221,8 +1225,15 @@
             }
             else
                 arrow.classList.add('hide')
-
         }
+
+document.addEventListener('DOMContentLoaded',()=>{
+    document.querySelectorAll('.nav-link').forEach(ele=>{
+  ele.onclick=(ele)=>{
+  document.getElementById(ele.target.dataset.target).scrollIntoView()
+  }
+})
+})
     </script>
 </body>
 
